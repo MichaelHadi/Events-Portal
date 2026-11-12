@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ########################### NAVIGATION ########################### */
+
+.navigation-bar{
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+}
+.nav-container{
+    border: 2px solid red;
+    width: 85%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.logo{
+    border: 2px solid blue;
+}
+.nav-links{
+    border: 2px solid green;
+    
+    display: flex;
+    gap: 20px;
+}
+.sign-in{
+    border: 2px solid yellow;
+}
