@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
-/* ==================================================
-   GLOBAL
-   ================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,11 +40,8 @@ footer {
   border-top: 1px solid #3d0000;
 }
 
-/* ==================================================
-   SHARED HEADER
-   index.html, student-login.html, forgot-password.html,
-   reset-email-sent.html
-   ================================================== */
+/*index.html, student-login.html, forgot-password.html,
+   reset-email-sent.html*/
 .navbar {
   flex-shrink: 0;
   min-height: 56px;
@@ -59,10 +53,6 @@ footer {
   padding: 10px 24px;
   background: #800000;
   border-bottom: 1px solid #3d0000;
-}
-
-.navbar.navbar--event-portal-centered {
-  justify-content: center;
 }
 
 .event-portal {
@@ -94,10 +84,7 @@ footer {
   display: block;
 }
 
-/* ==================================================
-   NAVIGATION
-   index.html and student-login.html
-   ================================================== */
+/*index.html and student-login.html*/
 .nav-links {
   display: flex;
   gap: 8px 14px;
@@ -136,10 +123,7 @@ footer {
   text-decoration: none;
 }
 
-/* ==================================================
-   LOGIN PAGES
-   index.html and student-login.html
-   ================================================== */
+/*index.html and student-login.html*/
 .logo {
   width: 140px;
   height: 140px;
@@ -223,10 +207,7 @@ input:focus-visible {
   text-decoration: none;
 }
 
-/* ==================================================
-   FORGOT PASSWORD PAGES
-   forgot-password.html and reset-email-sent.html
-   ================================================== */
+/*forgot-password.html and reset-email-sent.html*/
 h1 {
   max-width: 100%;
   margin-bottom: 15px;
@@ -245,16 +226,7 @@ h1 {
   text-align: center;
 }
 
-/* ==================================================
-   ACTIVE AND FOCUS STATES
-   ================================================== */
-.nav-links a.active {
-  color: #fff;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
+.nav-links a.active,
 .nav-links a:active,
 .nav-links a:focus-visible {
   text-decoration: underline;
@@ -262,6 +234,11 @@ h1 {
   text-underline-offset: 4px;
 }
 
+.nav-links a.active {
+  color: #fff;
+}
+
+/*Keyboard focus styles (tab)*/
 .nav-links a:focus-visible,
 .nav-login:focus-visible,
 .logo:focus-visible,
@@ -277,9 +254,7 @@ h1 {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-/* ==================================================
-   HOVER STATES
-   ================================================== */
+/*Hover*/
 @media (hover: hover) {
   .event-portal-logo:hover {
     transform: rotate(360deg);
@@ -305,10 +280,7 @@ h1 {
   }
 }
 
-/* ==================================================
-   LOGIN PAGE MEDIA
-   index.html and student-login.html
-   ================================================== */
+/*index.html and student-login.html*/
 @media (max-width: 900px) {
   .navbar {
     column-gap: 12px;
