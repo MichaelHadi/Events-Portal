@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login | Events Portal</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="event-portal" href="index.html">
+      <span class="event-portal-logo">
+        <img src="images/EP.png" alt="Events Portal logo">
+      </span>
+      <span>Events Portal</span>
+    </a>
+
+    <nav class="nav-links">
+      <a>HOME</a>
+      <a>ANNOUNCEMENTS</a>
+      <a>EVENTS</a>
+      <a href="index.html">OFFICER</a>
+    </nav>
+
+    <a class="nav-login" href="student-login.html">Log in</a>
+  </header>
+
+  <main>
+    <div class="content login-content">
+      <h1>STUDENT PAGE</h1>
+
+      <a class="logo" href="index.html" aria-label="Return to officer login">
+        <img src="images/SMCL.png" alt="Saint Michael's College of Laguna logo">
+      </a>
+
+      <h2>STUDENT LOGIN</h2>
+
+      <form action="#" method="post">
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username"
+                 placeholder="Enter username" autocomplete="username" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"
+                 placeholder="Enter password" autocomplete="current-password" required>
+        </div>
+
+        <button type="submit" class="submit">LOG IN</button>
+        <a class="forgot-password" href="forgot-password.html">Forgot Password?</a>
+      </form>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+</html>

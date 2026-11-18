@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,6 @@
 
 body {
   min-height: 100vh;
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
   color: #2a2a2a;
@@ -16,8 +16,7 @@ body {
 }
 
 .navbar {
-  position: relative;
-  flex: 0 0 auto;
+  flex-shrink: 0;
   min-height: 56px;
   display: flex;
   align-items: center;
@@ -29,11 +28,11 @@ body {
   border-bottom: 1px solid #3d0000;
 }
 
-.navbar.navbar--brand-centered {
+.navbar.navbar--event-portal-centered {
   justify-content: center;
 }
 
-.brand {
+.event-portal {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -43,29 +42,28 @@ body {
   text-decoration: none;
 }
 
-.brand-logo {
+.event-portal-logo {
   width: 34px;
   height: 34px;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  place-items: center;
   overflow: hidden;
   border-radius: 50%;
   background: #fff;
   transition: transform 0.4s ease;
 }
 
-.brand-logo img {
+.event-portal-logo img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
 }
 
+/*Officer page*/
 .nav-links {
-  position: relative;
   display: flex;
-  flex-wrap: nowrap;
   gap: 8px 14px;
 }
 
@@ -75,7 +73,6 @@ body {
   align-items: center;
   white-space: nowrap;
   padding: 4px 0 2px;
-  border-bottom: 2px solid transparent;
   color: #f1dede;
   font-size: 10px;
   font-weight: 700;
@@ -83,12 +80,15 @@ body {
   text-decoration: none;
   cursor: pointer;
   user-select: none;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .nav-login {
   width: 90px;
   min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #fff;
   border-radius: 6px;
   color: #fff;
@@ -96,17 +96,44 @@ body {
   font-size: 10px;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.login-content {
+  justify-content: center;
+}
+
+h2 {
+  margin: 18px 0 12px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.logo {
+  width: 101px;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 main {
-  flex: 1 0 auto;
+  flex-grow: 1;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 40px 20px 60px;
-  background:
-    radial-gradient(circle at 5% 20%, rgba(128, 0, 0, 0.08), transparent 28%),
-    radial-gradient(circle at 95% 80%, rgba(128, 0, 0, 0.08), transparent 28%);
 }
 
 .content {
@@ -120,49 +147,25 @@ main {
 h1 {
   max-width: 100%;
   margin-bottom: 15px;
-  font-size: clamp(24px, 5vw, 38px);
+  font-size: 38px;
   font-weight: 800;
   letter-spacing: 0.5px;
   text-align: center;
 }
 
-h2 {
-  margin: 18px 0 12px;
-  font-size: 17px;
-  font-weight: 800;
-}
-
-.logo {
-  position: relative;
-  width: 101px;
-  height: 101px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 50%;
-  background: transparent;
-}
-
-.logo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;
-}
-
+/*Forgot password and email confirmation page*/
 .page-message {
-  width: min(100%, 299px);
+  width: 100%;
+  max-width: 299px;
   margin-bottom: 18px;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
 }
 
-/* 4. FORM SA PAG-LOGIN */
 form {
-  width: min(100%, 299px);
+  width: 100%;
+  max-width: 299px;
 }
 
 .field {
@@ -219,14 +222,20 @@ input:focus-visible {
   text-decoration: none;
 }
 
+footer {
+  flex-shrink: 0;
+  min-height: 82px;
+  background: #800000;
+  border-top: 1px solid #3d0000;
+}
+
 @media (hover: hover) {
-  .brand-logo:hover {
+  .event-portal-logo:hover {
     transform: rotate(360deg);
   }
 
   .nav-links a:hover {
     color: #fff;
-    border-bottom-color: #fff;
   }
 
   .nav-login:hover {
@@ -247,11 +256,11 @@ input:focus-visible {
 
 .nav-links a.active {
   color: #fff;
-  border-bottom-color: #fff;
 }
 
 .nav-links a:focus-visible,
 .nav-login:focus-visible,
+.logo:focus-visible,
 .submit:focus-visible,
 .forgot-password:focus-visible {
   outline: 2px solid currentColor;
@@ -264,13 +273,6 @@ input:focus-visible {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-footer {
-  flex: 0 0 auto;
-  min-height: 82px;
-  background: #800000;
-  border-top: 1px solid #3d0000;
-}
-
 @media (max-width: 760px) {
   .navbar {
     justify-content: space-between;
@@ -279,14 +281,10 @@ footer {
   }
 
   .nav-links {
-    position: static;
-    left: auto;
     order: 3;
     flex-basis: 100%;
     justify-content: center;
     gap: 8px 18px;
-    padding-top: 0;
-    transform: none;
   }
 
   .nav-login {
@@ -296,6 +294,10 @@ footer {
 
   main {
     padding: 32px 16px 40px;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 
   input,
@@ -311,7 +313,7 @@ footer {
     padding-left: 12px;
   }
 
-  .brand {
+  .event-portal {
     font-size: 16px;
   }
 
