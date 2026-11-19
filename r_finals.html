@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Announcements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- nav bar -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand">
+      <img src="../assets/1.jpg" class="nav logo" alt="Logo">
+      Events Portal
+    </a>
+
+    <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+            <li><a href="announcement.html" aria-current="page">Announcements</a></li>
+            <li><a href="eventdetails.html">Events</a></li>
+            <li><a href="officer-dashboard.html">Officer</a></li>
+    </ul>
+
+    <a href="login.html" class="nav-login">Log in</a>
+  </nav>
+
+  <header class="header">
+    <h1>Announcements</h1>
+  </header>
+
+  <main>
+    <div class="section-row">
+      <h2 class="section-title">Latest announcements</h2>
+      <form class="search" role="search" action="#">
+        <input type="search" id="search" name="q" placeholder="Search announcements" aria-label="Search announcements" autocomplete="off" list="announcement-titles">
+        <datalist id="announcement-titles">
+          <option value="Annual Tech Summit">
+          <option value="Exam Week November 2026">
+          <option value="Microsoft 365 Outage">
+          <option value="Youth Leadership Conference">
+          <option value="SBMIT Fest 2026">
+          <option value="Michaelean's Teachers Day">
+          <option value="feast of Saint Michael the Archangel">
+          <option value="21st international Day of peace">
+          <option value="Rogelio Limaco Day">
+          <option value="Programmer's Day Celebration">
+          <option value="National Heroes Day">
+          <option value="Ninoy Aquino Day">
+        </datalist>
+      </form>
+    </div>
+
+
+    <input type="checkbox" id="toggle-more" class="toggle-more">
+
+    <section class="grid scroll-area">
+      <a href="#popup-1" class="card dark">
+        <img class="card-img" src="../assets/code in the blank.jpg" alt="Announcement image">
+        <h2>Annual Tech Summit</h2>
+        <p class="card-date">December 05, 2026</p>
+        <p class="card-text">The Annual Tech Summit 2026 brings together technology enthusiasts, students, professionals, and industry experts to explore the latest developments in the digital world.</p>
+      </a>
+
+      <a href="#popup-2" class="card light">
+        <img class="card-img" src="../assets/exam.jpg" alt="Announcement image">
+        <h2>Exam Week November 2026</h2>
+        <p class="card-date">December 20, 2026</p>
+        <p class="card-text">Get ready for an exciting week of exams! All students are encouraged to prepare thoroughly and perform their best.</p>
+      </a>
+
+      <a href="#popup-3" class="card light">
+        <img class="card-img" src="../assets/ms365.jpg" alt="Announcement image">
+        <h2>Microsoft 365 Outage</h2>
+        <p class="card-date">January 15, 2027</p>
+        <p class="card-text">We are currently experiencing an outage with Microsoft 365 services. We are working to resolve the issue as soon as possible.</p>
+      </a>
+
+      <a href="#popup-4" class="card dark">
+        <img class="card-img" src="../assets/youth.jpg" alt="Announcement image">
+        <h2>Youth Leadership Conference</h2>
+        <p class="card-date">January 24, 2027</p>
+        <p class="card-text">Empowering the next generation of leaders! The Youth Leadership Conference aims to inspire young individuals to become responsible, confident, and active members of society.</p>
+      </a>
+
+      <a href="#popup-5" class="card dark">
+        <img class="card-img" src="../assets/sbmit_fest.jpg" alt="Announcement image">
+        <h2>SBMIT fest 2026</h2>
+        <p class="card-date">November 20, 2026</p>
+        <p class="card-text">Join us for the annual SBMIT Festival 2026, a celebration of innovation and creativity!</p>
+      </a>
+
+      <a href="#popup-6" class="card light">
+        <img class="card-img" src="../assets/tc_day.jpg" alt="Announcement image">
+        <h2>Michaelean's Teachers Day</h2>
+        <p class="card-date">March 05, 2027</p>
+        <p class="card-text">Join us for a day filled with heartfelt tributes, fun activities, and special performances dedicated to our beloved teachers. Let’s make this celebration as extraordinary as the people we’re honoring!</p>
+      </a>
+
+      <a href="#popup-7" class="card light extra">
+        <img class="card-img" src="../assets/feast.jpg" alt="Announcement image">
+        <h2>Feast of Saint Michael the Archangel</h2>
+        <p class="card-date">November 06, 2026</p>
+        <p class="card-text">Celebrate the feast of Saint Michael the Archangel with us!</p>
+      </a>
+
+      <a href="#popup-8" class="card dark extra">
+        <img class="card-img" src="../assets/21st.jpg" alt="Announcement image">
+        <h2>21st international Day of peace</h2>
+        <p class="card-date">November 13, 2026</p>
+        <p class="card-text"> Real peace isn't just absence of conflic, it is the daily choice to listen, bridges devides,and build a future.Join us for a day filled with heartfelt tributes, fun activities, and special performances dedicated to our beloved teachers. Let’s make this celebration as extraordinary as the people we’re honoring!</p>
+      </a>
+
+      <a href="#popup-9" class="card dark extra">
+        <img class="card-img" src="../assets/limaco.jpg" alt="Announcement image">
+        <h2>Rogelio Limaco Day </h2>
+        <p class="card-date">September 13, 2026</p>
+        <p class="card-text">freedome isn't just a chapter in a history book, it is a legacy paid for in courage,
+             so join us in honoring trailblazers and everyday.
+            </p>
+      </a>
+
+      <a href="#popup-10" class="card light extra">
+        <img class="card-img" src="../assets/prog_day.jpg" alt="Announcement image">
+        <h2>Programmer's day Celebration</h2>
+        <p class="card-date">September 13, 2026</p>
+        <p class="card-text">Celebrate Programmer's Day with us! Join us for a day filled with coding challenges, workshops, and networking opportunities.</p>
+      </a>
+
+      <a href="#popup-11" class="card light extra">
+        <img class="card-img" src="../assets/heroesday.jpg" alt="Announcement image">
+        <h2>National Heroes Day</h2>
+        <p class="card-date">August 31, 2026</p>
+        <p class="card-text">Celebrate the legacy of our national heroes with us!</p>
+      </a>
+
+      <a href="#popup-12" class="card dark extra">
+        <img class="card-img" src="../assets/aquinoday.jpg" alt="Announcement image">
+        <h2>Ninoy Aquino Day</h2>
+        <p class="card-date">August 21, 2026</p>
+        <p class="card-text">Celebrate the legacy of our national heroes with us!</p>
+      </a>
+    </section>
+
+    <label for="toggle-more" class="see-more">
+      <span class="text-more">... See more</span>
+      <span class="text-less">... See less</span>
+    </label>
+  </main>
+
+  <footer></footer>
+
+  <!-- popups for each announcement -->
+  <div id="popup-1" class="popup" role="dialog" aria-labelledby="popup-title-1">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-1">Annual Tech Summit</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/code in the blank.jpg" alt="photo for this announcement">
+      </figure>
+      <p class="popup-desc">The Annual Tech Summit 2026 brings together technology enthusiasts, students, professionals, and industry experts to explore the latest developments in the digital world.
+The event will feature keynote presentations, discussions about artificial intelligence, cybersecurity, software development, and emerging technologies. Participants will also have the opportunity to attend interactive demonstrations, exchange ideas, and connect with other technology enthusiasts.
+Join us and discover how technology continues to shape the future!</p>
+    </div>
+  </div>
+
+  <div id="popup-2" class="popup" role="dialog" aria-labelledby="popup-title-2">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-2">Exam Week November 2026</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/exam.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Get ready for an exciting week of exams! All students are encouraged to prepare thoroughly and perform their best. Join us for Exam Week! We'll have study sessions, review materials, and support to help you succeed.</p>
+    </div>
+  </div>
+
+  <div id="popup-3" class="popup" role="dialog" aria-labelledby="popup-title-3">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-3">Microsoft 365 outage</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/ms365.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">We are currently experiencing an outage with Microsoft 365 services. We are working to resolve the issue as quickly as possible.</p>
+    </div>
+  </div>
+
+  <div id="popup-4" class="popup" role="dialog" aria-labelledby="popup-title-4">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-4">Youth Leadership conference</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/youth.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc"><b>Empowering the next generation of leaders!</b>
+
+The Youth Leadership Conference aims to inspire young individuals to become responsible, confident, and active members of society.
+The conference will feature motivational speakers, leadership discussions, youth empowerment sessions, interactive workshops, and group activities. Topics will include responsible leadership, community involvement, teamwork, personal development, and social responsibility.
+Participants will have the opportunity to share their ideas, learn from inspiring individuals, and discover ways to contribute positively to their communities.</p>
+    </div>
+  </div>
+
+  <div id="popup-5" class="popup" role="dialog" aria-labelledby="popup-title-5">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-5">SBMIT fest 2026</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/sbmit_fest.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc"><b>Join us for the annual SBMIT Festival!</b>
+The SBMIT Festival is a vibrant celebration of innovation, creativity, and student achievement. This year's event will feature keynote speakers, interactive workshops, poster presentations, and networking opportunities. It's a chance for students, faculty, and industry professionals to come together and explore the latest trends and developments in technology and business.</p>
+    </div>
+  </div>
+
+  <div id="popup-6" class="popup" role="dialog" aria-labelledby="popup-title-6">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-6">Michaelean's Teachers Day</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/tc_day.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Join us for a day filled with heartfelt tributes, fun activities, and special performances dedicated to our beloved teachers. Let’s make this celebration as extraordinary as the people we’re honoring!</p>
+    </div>
+  </div>
+
+  <div id="popup-7" class="popup" role="dialog" aria-labelledby="popup-title-7">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-7">Feast of Saint Michael the Archangel</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/feast.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Join us for the Feast of Saint Michael the Archangel, a day of reflection, prayer, and community celebration.</p>
+    </div>
+  </div>
+
+  <div id="popup-8" class="popup" role="dialog" aria-labelledby="popup-title-8">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-8">21st international Day of peace</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/21st.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Join us for a day filled with heartfelt tributes, fun activities, and special performances dedicated to our beloved teachers. Let’s make this celebration as extraordinary as the people we’re honoring!</p>
+    </div>
+  </div>
+
+  <div id="popup-9" class="popup" role="dialog" aria-labelledby="popup-title-9">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-9">Rogelio limaco Day</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/limaco.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Celebrate the life and legacy of Rogelio Limaco with us!</p>
+    </div>
+  </div>
+
+  <div id="popup-10" class="popup" role="dialog" aria-labelledby="popup-title-10">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-10">Programmer's Day Celebration</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/prog_day.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Celebrate Programmer's Day with us! Join us for a day filled with coding challenges, workshops, and networking opportunities.</p>
+    </div>
+  </div>
+
+  <div id="popup-11" class="popup" role="dialog" aria-labelledby="popup-title-11">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-11">National Heroes Day</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/heroesday.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Celebrate National Heroes Day with us! Join us for a day of remembrance and appreciation for the brave heroes who have served our country.</p>
+    </div>
+  </div>
+
+  <div id="popup-12" class="popup" role="dialog" aria-labelledby="popup-title-12">
+    <a href="#" class="popup-backdrop" aria-label="Close"></a>
+    <div class="popup-box">
+      <div class="popup-header">
+        <h2 id="popup-title-12">Ninoy Aquino Day</h2>
+        <a href="#" class="popup-close" aria-label="Close">&times;</a>
+      </div>
+      <figure class="popup-image">
+        <img src="../assets/aquinoday.jpg" alt="Photo for this announcement">
+      </figure>
+      <p class="popup-desc">Celebrate Ninoy Aquino Day with us! Join us for a day of remembrance and appreciation for the brave hero who sacrificed his life for the freedom of our nation.</p>
+    </div>
+  </div>
+
+</body>
+</html>
