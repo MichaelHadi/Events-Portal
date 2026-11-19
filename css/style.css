@@ -85,6 +85,7 @@ header nav a:hover {
 ===================================== */
 
 header {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,18 +101,27 @@ header {
 
 header h2 {
     font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 nav {
     display: flex;
     align-items: center;
     gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav a,
 header a {
     text-decoration: none;
     font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
     color: #333;
 }
 
@@ -124,6 +134,8 @@ header a:hover {
     padding: 9px 22px;
     border: 1px solid #800000;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -867,10 +879,20 @@ main h1 {
 
     header {
         padding: 15px 4%;
+        flex-direction: column;
+        gap: 15px;
     }
 
     nav {
         gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: static;
+        transform: none;
+    }
+
+    body {
+        padding-top: 170px;
     }
 
     .event-container {
@@ -913,7 +935,7 @@ main h1 {
 @media screen and (max-width: 600px) {
 
     body {
-        padding-top: 130px;
+        padding-top: 170px;
     }
 
     header {
@@ -924,6 +946,8 @@ main h1 {
     nav {
         flex-wrap: wrap;
         justify-content: center;
+        position: static;
+        transform: none;
     }
 
     main {
