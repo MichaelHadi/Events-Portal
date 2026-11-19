@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCS & School Events Calendar</title>
+    <link rel="icon" type="image/png" href="assets/dcs-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="assets/dcs-logo.png" alt="DCS Logo">
+            <h2>Events Portal</h2>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="announcements.html">Announcements</a>
+            <a href="officer-dashboard.html">Officer</a>
+        </nav>
+
+        <a href="#" class="login-link">Log in</a>
+    </header>
+
+    <main>
+
+        <h1>DCS & School Events Calendar</h1>
+
+        <!-- Dito yung calendar -->
+        <section class="calendar-section">
+
+            <!-- Calendar title and search bar -->
+            <div class="section-heading">
+                <h2>Event Calendar</h2>
+                <input type="search" placeholder="Search events">
+            </div>
+
+            <!-- Pang-switch ng November at December -->
+            <div class="calendar-switch">
+
+                <!-- November muna yung lalabas -->
+                <input type="radio" name="month" id="november-view" checked>
+                <input type="radio" name="month" id="december-view">
+
+                <!-- NOVEMBER 2026 -->
+                <div class="calendar november-calendar">
+
+                    <!-- Arrows para lumipat sa December -->
+                    <div class="calendar-header">
+                        <label for="november-view" class="calendar-arrow disabled-arrow">&lt;</label>
+                        <h2>NOVEMBER 2026</h2>
+                        <label for="december-view" class="calendar-arrow">&gt;</label>
+                    </div>
+
+                    <!-- November dates -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td class="selected-date"><a href="eventdetails.html">13</a></td>
+                                <td>14</td>
+                            </tr>
+
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+
+                            <tr>
+                                <td>29</td>
+                                <td class="selected-date"><a href="eventdetails.html">30</a></td>
+                                <td class="other-month">1</td>
+                                <td class="other-month">2</td>
+                                <td class="other-month">3</td>
+                                <td class="other-month">4</td>
+                                <td class="other-month">5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- End ng November -->
+
+
+                <!-- DECEMBER 2026 -->
+                <div class="calendar december-calendar">
+
+                    <!-- Arrow para bumalik sa November -->
+                    <div class="calendar-header">
+                        <label for="november-view" class="calendar-arrow">&lt;</label>
+                        <h2>DECEMBER 2026</h2>
+                        <label for="december-view" class="calendar-arrow disabled-arrow">&gt;</label>
+                    </div>
+
+                    <!-- December dates -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="other-month">29</td>
+                                <td class="other-month">30</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                            </tr>
+
+                            <tr>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                            </tr>
+
+                            <tr>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="other-month">1</td>
+                                <td class="other-month">2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- End ng December -->
+
+            </div>
+        </section>
+
+        <!-- Upcoming events ko -->
+        <section id="upcoming-events">
+
+            <h2>UPCOMING EVENTS THIS MONTH</h2>
+
+            <div class="events-container">
+
+                <div class="event-card">
+                    <h3>Technology Workshop</h3>
+                    <p>November 13, 2026</p>
+                    <a href="eventdetails.html">View Details</a>
+                </div>
+
+                <div class="event-card">
+                    <h3>Coding Competition</h3>
+                    <p>November 30, 2026</p>
+                    <a href="eventdetails.html">View Details</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer ng website -->
+    <footer class="main-footer">
+        <p>© 2026 Events Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
