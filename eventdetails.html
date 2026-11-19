@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Portal</title>
+    <link rel="icon" type="image/png" href="assets/dcs-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="header-logo">
+    <img src="assets/dcs-logo.png" alt="DCS Logo">
+    <h2>Events Portal</h2>
+</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Announcements</a>
+            <a href="eventdetails.html" class="active">Events</a>
+            <a href="officer-dashboard.html">Officer</a>
+        </nav>
+
+        <a href="#" class="login-link">Log in</a>
+    </header>
+
+
+    <!-- EVENT DETAILS -->
+
+    <main class="event-container">
+
+        <a href="index.html" class="back-link">‹</a>
+
+        <div class="event-card">
+
+            <img src="assets/cat.png" alt="Technology Workshop" class="event-image">
+
+            <div class="event-content">
+
+                <h1>Technology Workshop</h1>
+
+                <div class="event-information">
+
+                    <p>
+                        <strong>DATE</strong>
+                        <span>November 13, 2026</span>
+                    </p>
+
+                    <p>
+                        <strong>TIME</strong>
+                        <span>9:00 AM - 12:00 PM</span>
+                    </p>
+
+                    <p>
+                        <strong>VENUE</strong>
+                        <span>To be announced</span>
+                    </p>
+
+                    <p>
+                        <strong>CATEGORY</strong>
+                        <span>Workshop</span>
+                    </p>
+
+                </div>
+
+                <div class="event-description">
+                    <p>
+                        Join us for an exciting Technology Workshop where
+                        students can explore new technologies, learn useful
+                        digital skills, and gain more knowledge about the
+                        world of technology.
+                    </p>
+                </div>
+
+
+                <!-- ACTION BUTTONS TO PLS PARA MAKITA KITA AGAD BLABLABLA -->
+
+                <div class="event-actions">
+
+                    <label class="like-button" title="Like Event">
+                        <input type="checkbox">
+
+                        <img src="assets/heart.png" class="not-liked" alt="Like">
+                        <img src="assets/favorite.png" class="liked" alt="Liked">
+                    </label>
+
+                    <label for="comment-toggle"
+                           class="symbol-button"
+                           title="Comments">
+                        <img src="assets/comment.png" alt="Comments">
+                    </label>
+
+                    <label for="calendar-toggle"
+                           class="symbol-button"
+                           title="Add to Calendar">
+                        <img src="assets/calendar.png" alt="Calendar">
+                    </label>
+
+                    <label for="share-toggle"
+                           class="symbol-button"
+                           title="Share Event">
+                        <img src="assets/share.png" alt="Share">
+                    </label>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- CALENDAR POPUP -->
+
+        <input type="checkbox" id="calendar-toggle" class="popup-toggle">
+
+        <div class="popup-overlay">
+            <div class="popup-box">
+
+                <p>Would you like to add this event to your Calendar App?</p>
+
+                <div class="popup-buttons">
+                    <label for="calendar-toggle">Yes, add it</label>
+                    <label for="calendar-toggle">Nevermind</label>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- SHARE POPUP  HAHAAAAAAA-->
+
+        <input type="checkbox" id="share-toggle" class="popup-toggle">
+
+        <div class="share-overlay">
+            <div class="share-popup-box">
+
+                <div class="share-header">
+                    <h3>Share</h3>
+                    <label for="share-toggle">&times;</label>
+                </div>
+
+               <div class="share-options">
+
+    <a href="eventdetails.html"
+       class="share-option link-option"
+       title="Event Page">
+        <img src="assets/copy.svg" alt="Copy Link">
+    </a>
+
+    <a href="https://code.visualstudio.com"
+       target="_blank"
+       class="share-option embed-option"
+       title="HTML">&lt;/&gt;</a>
+
+    <a href="https://www.facebook.com/"
+       target="_blank"
+       class="share-option facebook-option"
+       title="Facebook">
+        <img src="assets/fb.svg" alt="Facebook">
+    </a>
+
+    <a href="https://teams.microsoft.com/"
+       target="_blank"
+       class="share-option teams-option"
+       title="Microsoft Teams">
+        <img src="assets/ms.svg" alt="Microsoft Teams">
+    </a>
+
+</div>
+
+            </div>
+        </div>
+
+
+        <!-- COMMENT POPUP TOGGLE  TO HAAAA PLS-->
+<input type="checkbox" id="comment-toggle" class="popup-toggle">
+
+<!-- COMMENTS POPUP -->
+<div class="comment-overlay">
+
+    <section class="comment-popup">
+
+        <div class="comment-popup-header">
+            <strong>Comments</strong>
+            <label for="comment-toggle">&times;</label>
+        </div>
+
+        <div class="comment-list">
+
+            <div class="comment">
+                <img src="assets/cat.jpg" alt="Profile Picture">
+
+                <div class="comment-content">
+                    <div class="comment-text">
+                        <strong>James Jordan</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit provident aut ea laboriosam earum, eius minus id.</p>
+                    </div>
+
+                    <div class="comment-actions">
+                        <span>♡ 4</span>
+                        <span>Reply</span>
+                    </div>
+
+                    <div class="reply">
+                        <img src="assets/cat.jpg" alt="Profile Picture">
+
+                        <div class="reply-content">
+                            <div class="comment-text">
+                                <strong>Neil Peach Aczon</strong>
+                                <p>Id corrupti qui sunt provident in occaecat ea facilis et veniam dolor omnis.</p>
+                            </div>
+
+                            <div class="comment-actions">
+                                <span>♡ 1</span>
+                                <span>Reply</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#">... see more replies</a>
+
+                    <div class="reply">
+                        <img src="assets/cat.jpg" alt="Profile Picture">
+
+                        <div class="reply-content">
+                            <div class="comment-text">
+                                <strong>Shana Euanne Avila</strong>
+                                <p>As minus id at exercitation est aliquid cupidatat quos nam culpa nam exercitation id soluta id corrupti qui sunt provident in occaecat ea facilis et veniam dolor omnis in dolorem dolore pariatur maxime et.</p>
+                            </div>
+
+                            <div class="comment-actions">
+                                <span>♡ 6</span>
+                                <span>Reply</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="comment">
+                <img src="assets/cat.jpg" alt="Profile Picture">
+
+                <div class="comment-content">
+                    <div class="comment-text">
+                        <strong>Rhaiden Steven Pascual</strong>
+                        <p>Id corrupti qui sunt provident in occaecat ea facilis et veniam dolor omnis.</p>
+                    </div>
+
+                    <div class="comment-actions">
+                        <span>♡ 2</span>
+                        <span>Reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <img src="assets/cat.jpg" alt="Profile Picture">
+
+                <div class="comment-content">
+                    <div class="comment-text">
+                        <strong>Stephen Michael Hadi</strong>
+                        <p>Aliquip cupidatat quos nam culpa nam exercitation id soluta id corrupti qui sunt.</p>
+                    </div>
+
+                    <div class="comment-actions">
+                        <span>♡ 3</span>
+                        <span>Reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="see-more">... see more</a>
+
+        </div>
+
+        <div class="comment-input">
+            <input type="text" placeholder="What's your opinion about this?">
+            <button type="submit">Post</button>
+        </div>
+
+    </section>
+
+</div>
+</main>
+
+<footer class="main-footer">
+    <p>© 2026 Events Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+</html>
+
+

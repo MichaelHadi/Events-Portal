@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/event-tab.css">
+</head>
+<body>
+
+<!-- Same header as officer-dashboard.html -->
+<header class="topbar">
+    <div class="brand">
+        <img src="assets/dcs-logo.png" alt="DCS Logo">
+        <h2>Events Portal</h2>
+    </div>
+
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Announcements</a>
+            <a href="eventdetails.html">Events</a>
+            <a href="officer-dashboard.html" class="active">Officer</a>
+        </nav>
+
+    <a href="#" class="logout">Sign Out</a>
+</header>
+
+<main class="page-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a class="side-link" href="officer-dashboard.html">▦ Dashboard</a>
+        <a class="side-link" href="announcement-tab.html">⚑ Announcements</a>
+        <a class="side-link active" href="event-tab.html">▣ Events</a>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="content">
+
+        <div class="page-heading">
+            <div>
+                <h1>EVENTS</h1>
+                <p>Manage and view all events</p>
+            </div>
+
+            <a href="#new-event" class="button button-maroon">
+                New Event
+            </a>
+        </div>
+
+        <!-- Event Table -->
+        <section class="table-panel">
+
+            <h2>All Events</h2>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Posted By</th>
+                        <th>Tag</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>RE-LAUNCH 2026</td>
+                        <td>Dec. 7, 2026</td>
+                        <td>James Jordan</td>
+                        <td>
+                            <span class="status status-muted">Draft</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#new-event">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Coding Competition</td>
+                        <td>Nov. 30, 2026</td>
+                        <td>James Jordan</td>
+                        <td>
+                            <span class="status status-event">Published</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#new-event">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Technology Workshop</td>
+                        <td>Nov. 13, 2026</td>
+                        <td>Sheldon Steven</td>
+                        <td>
+                            <span class="status status-event">Published</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#new-event">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#">‹</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">›</a>
+            </div>
+
+        </section>
+
+    </section>
+</main>
+
+<!-- Same footer as officer-dashboard.html -->
+<footer class="main-footer">
+    <p>© 2026 Events Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

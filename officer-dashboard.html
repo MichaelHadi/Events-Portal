@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Dashboard</title>
+    <link rel="stylesheet" href="css/officer-dashboard.css">
+      <link rel="icon" type="image/png" href="assets/dcs-logo.png">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <img src="assets/dcs-logo.png" alt="DCS Logo">
+        <h2>Events Portal</h2>
+    </div>
+
+      <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Announcements</a>
+            <a href="eventdetails.html">Events</a>
+            <a href="officer-dashboard.html" class="active">Officer</a>
+        </nav>
+
+
+    <a href="#" class="logout">Sign Out</a>
+</header>
+
+<main class="layout">
+
+    <aside class="sidebar">
+        <a class="active" href="officer-dashboard.html">▦ Dashboard</a>
+        <a href="announcement-tab.html">⚑ Announcements</a>
+        <a href="event-tab.html">▣ Events</a>
+    </aside>
+
+    <section class="content">
+
+        <div class="page-heading">
+            <div>
+                <h1>CSS OFFICER DASHBOARD</h1>
+                <p>Thursday, November 19, 2026</p>
+            </div>
+
+            <div class="heading-buttons">
+                <a href="announcement-tab.html" class="button light">New Announcement</a>
+                <a href="event-tab.html" class="button maroon">New Event</a>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <article class="stat-card">
+                <p>Total Events</p>
+                <h2>23</h2>
+                <span>All time</span>
+            </article>
+
+            <article class="stat-card">
+                <p>Total Announcements</p>
+                <h2>16</h2>
+                <span>All time</span>
+            </article>
+
+            <article class="stat-card">
+                <p>Events This Month</p>
+                <h2>2</h2>
+                <span>November</span>
+            </article>
+
+            <article class="stat-card">
+                <p>Announcements This Month</p>
+                <h2>3</h2>
+                <span>November</span>
+            </article>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <section class="panel">
+                <div class="panel-heading">
+                    <h2>Upcoming Events</h2>
+                    <a href="event-tab.html">View all</a>
+                </div>
+
+                <div class="list-item">
+                    <div class="date-box">
+                        <strong>30</strong>
+                        <span>NOV</span>
+                    </div>
+
+                    <div class="item-info">
+                        <h3>Coding Competition</h3>
+                        <p>8:00 AM - 12:00 PM | AVR 202</p>
+                    </div>
+
+                    <span class="status draft">DCS</span>
+                </div>
+
+                <div class="list-item">
+                    <div class="date-box">
+                        <strong>7</strong>
+                        <span>DEC</span>
+                    </div>
+
+                    <div class="item-info">
+                        <h3>RE-LAUNCH 2026</h3>
+                        <p>Time and venue to be announced</p>
+                    </div>
+
+                    <span class="status draft">School</span>
+                </div>
+            </section>
+
+            <!-- Updated calendar design -->
+            <section class="panel mini-calendar">
+
+                <div class="panel-heading">
+                    <h2>November 2026</h2>
+
+                    <div class="calendar-arrows">
+                        <span>‹</span>
+                        <span>›</span>
+                    </div>
+                </div>
+
+                <div class="calendar-days">
+                    <b>S</b><b>M</b><b>T</b><b>W</b><b>T</b><b>F</b><b>S</b>
+
+                    <span class="sunday">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+
+                    <span class="sunday">8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span class="event-date">13</span>
+                    <span>14</span>
+
+                    <span class="sunday">15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span class="today">19</span>
+                    <span>20</span>
+                    <span>21</span>
+
+                    <span class="sunday">22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+
+                    <span class="sunday">29</span>
+                    <span class="event-date">30</span>
+                </div>
+
+                <div class="calendar-legend">
+                    <div>
+                        <span class="legend-dot event-dot"></span>
+                        <p>Event</p>
+                    </div>
+
+                    <div>
+                        <span class="legend-dot today-dot"></span>
+                        <p>Today</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="panel recent-panel">
+
+            <div class="panel-heading">
+                <h2>Recent Announcements</h2>
+                <a href="announcement-tab.html">View all</a>
+            </div>
+
+            <div class="list-item">
+                <div class="date-box">
+                    <strong>16</strong>
+                    <span>NOV</span>
+                </div>
+
+                <div class="item-info">
+                    <h3>Class Suspension</h3>
+                    <p>Posted by James Jordan</p>
+                </div>
+
+                <span class="status published">Published</span>
+            </div>
+
+            <div class="list-item">
+                <div class="date-box">
+                    <strong>11</strong>
+                    <span>NOV</span>
+                </div>
+
+                <div class="item-info">
+                    <h3>Upcoming Technology Workshop</h3>
+                    <p>Posted by Sheldon Steven</p>
+                </div>
+
+                <span class="status published">Published</span>
+            </div>
+
+        </section>
+
+    </section>
+</main>
+
+<footer class="main-footer">
+    <p>© 2026 Events Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+
+/* =====================================
+   INTER FONT ALL TO LAHAT
+===================================== */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../FONTS/Inter/static/Inter_28pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../FONTS/Inter/static/Inter_28pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../FONTS/Inter/static/Inter_28pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../FONTS/Inter/static/Inter_28pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+/* =====================================
+   ACTIVE NAVIGATION
+===================================== */
+
+.topbar nav a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 8px;
+    transition: 0.2s ease;
+}
+
+/* Underline for the current page */
+.topbar nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Hover effect */
+.topbar nav a:hover {
+    color: #e0caca;
+}
+/* =====================================
+   GENERAL TO LAHAT LAHAT
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+
+    padding-top: 75px;
+}
+
+/* =====================================
+   HEADER / NAVIGATION
+===================================== */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    border-bottom: 1px solid #ddd;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1000;
+
+    background-color: #800000;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.topbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.topbar nav a,
+.topbar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.topbar nav a:hover,
+.topbar a:hover {
+    color: #e0caca;
+}
+
+.logout {
+    padding: 9px 22px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+/* =====================================
+   MAIN LAYOUT
+===================================== */
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 205px 1fr;
+    gap: 25px;
+
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 35px auto 0;
+    padding: 0 25px;
+
+    flex: 1;
+}
+
+.content {
+    min-width: 0;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    height: fit-content;
+
+    padding: 12px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.side-link {
+    display: block;
+
+    padding: 12px 15px;
+
+    text-decoration: none;
+    color: #444;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.side-link:hover {
+    background-color: #f5eeee;
+    color: #800000;
+}
+
+.side-link.active {
+    background-color: #800000;
+    color: white;
+}
+
+/* =====================================
+   PAGE HEADING
+===================================== */
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.page-heading h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+}
+
+.page-heading p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.button {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.button-maroon {
+    background-color: #800000;
+    color: white;
+}
+
+.button-maroon:hover {
+    background-color: #600000;
+}
+
+/* =====================================
+   TABLE PANEL
+===================================== */
+
+.table-panel {
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-table th {
+    padding: 15px 12px;
+
+    background-color: #f8f3f3;
+    color: #555;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 16px 12px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 13px;
+    color: #444;
+}
+
+.data-table tbody tr:hover {
+    background-color: #fcf9f9;
+}
+
+/* =====================================
+   EVENT STATUS
+===================================== */
+
+.status {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status-muted {
+    background-color: #eee;
+    color: #666;
+}
+
+.status-event {
+    background-color: #f4e5e5;
+    color: #800000;
+}
+
+/* =====================================
+   ACTIONS
+===================================== */
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.actions a {
+    color: #800000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   PAGINATIONINMIDA
+===================================== */
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    color: #555;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.pagination a.active {
+    background-color: #800000;
+    border-color: #800000;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #f5eeee;
+}
+
+/* =====================================
+    FOOTER
+===================================== */
+
+.main-footer {
+    width: 100%;
+
+    margin-top: 40px;
+    padding: 25px 15px;
+
+    background-color: #800000;
+    color: white;
+
+    text-align: center;
+
+    flex-shrink: 0;
+}
+
+.main-footer p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN LAHHAT
+===================================== */
+
+@media (max-width: 900px) {
+
+    .page-layout {
+        grid-template-columns: 180px 1fr;
+        gap: 18px;
+    }
+
+    .topbar {
+        padding: 18px 4%;
+    }
+
+    .topbar nav {
+        gap: 15px;
+    }
+
+    .topbar nav a,
+    .topbar a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 130px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .topbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .page-layout {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .side-link {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .page-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-panel {
+        padding: 12px;
+    }
+
+    .data-table {
+        min-width: 650px;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+
+    .main-footer {
+        padding: 20px 10px;
+    }
+
+    .main-footer p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .brand h2 {
+        font-size: 20px;
+    }
+
+    .topbar nav {
+        gap: 10px;
+    }
+
+    .topbar nav a,
+    .topbar a {
+        font-size: 11px;
+    }
+
+    .page-heading h1 {
+        font-size: 21px;
+    }
+}

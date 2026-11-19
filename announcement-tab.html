@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <link rel="stylesheet" href="css/announcement-tab.css">
+</head>
+<body>
+
+<!-- Same header as officer-dashboard.html -->
+<header class="topbar">
+    <div class="brand">
+        <img src="assets/dcs-logo.png" alt="DCS Logo">
+        <h2>Events Portal</h2>
+    </div>
+
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Announcements</a>
+            <a href="eventdetails.html">Events</a>
+            <a href="officer-dashboard.html" class="active">Officer</a>
+        </nav>
+
+    <a href="#" class="logout">Sign Out</a>
+</header>
+
+<main class="page-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a class="side-link" href="officer-dashboard.html">▦ Dashboard</a>
+        <a class="side-link active" href="announcement-tab.html">⚑ Announcements</a>
+        <a class="side-link" href="event-tab.html">▣ Events</a>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="content">
+
+        <div class="page-heading">
+            <div>
+                <h1>ANNOUNCEMENTS</h1>
+                <p>Manage and view all announcements</p>
+            </div>
+
+            <a href="#new-announcement" class="button button-maroon">
+                New Announcement
+            </a>
+        </div>
+
+        <!-- Announcement Table -->
+        <section class="table-panel">
+
+            <h2>All Announcements</h2>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Posted By</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Annual Tech Summit</td>
+                        <td>Dec. 5, 2026</td>
+                        <td>James Jordan</td>
+                        <td>
+                            <span class="status status-draft">Draft</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#edit-announcement">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Exam Week November 2026</td>
+                        <td>Nov. 18, 2026</td>
+                        <td>Sheldon Steven</td>
+                        <td>
+                            <span class="status status-published">Published</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#edit-announcement">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Microsoft 365 College</td>
+                        <td>Nov. 14, 2026</td>
+                        <td>Shawn Torres</td>
+                        <td>
+                            <span class="status status-published">Published</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#edit-announcement">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Youth Leadership Conference</td>
+                        <td>Nov. 5, 2026</td>
+                        <td>James Jordan</td>
+                        <td>
+                            <span class="status status-draft">Draft</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#edit-announcement">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Volunteers Day Celebration</td>
+                        <td>Feb. 14, 2026</td>
+                        <td>Sheldon Steven</td>
+                        <td>
+                            <span class="status status-published">Published</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#edit-announcement">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>College President Birthday Celebration</td>
+                        <td>Jan. 20, 2026</td>
+                        <td>Stephen Michael</td>
+                        <td>
+                            <span class="status status-published">Published</span>
+                        </td>
+                        <td>
+                            <div class="actions">
+                                <a href="#edit-announcement">Edit</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#">‹</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">›</a>
+            </div>
+
+        </section>
+
+    </section>
+</main>
+
+<!-- Same footer as officer-dashboard.html -->
+<footer class="main-footer">
+    <p>© 2026 Events Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
