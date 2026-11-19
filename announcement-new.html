@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Portal – New Announcement</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="dashboard.html"><span class="logo">CSS</span> Events Portal</a>
+      <nav class="main-nav">
+        <a href="#">HOME</a>
+        <a href="announcements.html">ANNOUNCEMENTS</a>
+        <a href="events.html">EVENTS</a>
+        <a href="dashboard.html" class="active">OFFICER</a>
+      </nav>
+      <div class="user-menu">Hello, James | <a href="#">Sign Out</a></div>
+    </div>
+  </header>
+
+  <main class="page">
+    <aside class="sidebar">
+      <a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        Dashboard
+      </a>
+      <a href="announcements.html" class="active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11v2a1 1 0 0 0 1 1h3l8 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M19 9a4 4 0 0 1 0 6"/></svg>
+        Announcements
+      </a>
+      <a href="events.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l5-12 7 7z"/><path d="M14 4v2M19 9h2M17 5l1-1M20 12l1 1"/></svg>
+        Events
+      </a>
+    </aside>
+
+    <section class="content">
+      <div class="page-head">
+        <h1 class="page-title">Announcements</h1>
+      </div>
+
+      <form class="card form-card" action="#" method="post">
+        <div class="field">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="e.g SBMIT Fest 2026">
+        </div>
+        <div class="field">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" style="height:96px" placeholder="Write the announcement here"></textarea>
+        </div>
+        <div class="field">
+          <span class="lbl">Cover Image</span>
+          <label class="dropzone" style="height:68px; font-size:7px;" for="cover">
+            Drag an image here or choose a PNG or JPG file
+            <input type="file" id="cover" name="cover" accept="image/png, image/jpeg" hidden>
+          </label>
+        </div>
+        <div class="form-actions">
+          <a href="announcements.html" class="btn btn-outline">Cancel</a>
+          <button type="submit" class="btn btn-primary">Publish Announcement</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"></footer>
+</body>
+</html>
